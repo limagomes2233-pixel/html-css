@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    <style>
+        @font-face {
+            font-family: 'OldLondon';
+            src: url(fonts/OldLondon.ttf) format(truetype),url(fonts/Olondon_.otf) format(opentype);
+            font-weight: normal;
+            font-style: normal;
+        }
+        /* 
+            Tipos de format()
+                -OPENTYPE(OTF)
+                -TRUETYPE(TTF)
+                EMBEDDED OPEN TYPE(EOT)
+                truetype-att(apple advanced typography)
+                svg
+
+        */
+        body{
+            font-family:Arial, Helvetica, sans-serif
+        }
+        h1{
+            font-family: 'OldLondon', 'Times New Roman', Times, serif;
+            font-size: 3em;
+            font-weight: bolder;
+        }
+        p{
+            font-family: 'OldLondon', 'Times New Roman', Times, serif;
+            font-size: 1.5em;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <h1>título</h1>
+    <p>lore ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga nesciunt possimus eveniet officia velit? Incidunt reprehenderit numquam ab adipisci, fugit mollitia magnam expedita nostrum corrupti, voluptatem nisi odio eaque error!
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime sed voluptatum tempore perferendis molestiae quas nulla itaque, eum dolore provident autem. Aspernatur repellat hic quisquam incidunt? Facere et officia voluptatem!</p>
+</body>
+</html>
