@@ -5,30 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela</title>
     <style>
-        body{
-            font-family: Arial, Helvetica, sans-serif;
+       body{
+        font-family: Arial, Helvetica, sans-serif;
+       }
+       table{
+        width: 400px;
+        height: 400px;
+        border-collapse: collapse;
 
+       }
+       td{
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;/* alinhamento horizontal*/
+        vertical-align: bottom;/* Alinhamento vertical*/
         }
-        table{
-            width: 400px;
-            border-collapse: collapse;
-            border:  5px solid blue;
-        }
-        tr{
-            background-color: aquamarine;
-        }
-        td{
-            border: 1px solid black;
-            padding: 8px;
-        }
-        tr.linha{
-            background-color: blanchedalmond;
-        }
-        tr.dado{
-            background-color: yellowgreen;
-        }
-        .esse{
-            background-color: blueviolet;
+        .numero{
+            text-align: right;
         }
     </style>
 </head>
@@ -48,16 +41,15 @@
             <td>A1</td>
             <td>B1</td>
             <td>C1</td>
-            <td>D1</td>
-            <td>e1</td>
+          
         </tr>
         <tr class="linha"> <!--SEGUNDA LINHA-->
             <td>A2</td>
             <td>B2</td>
-            <td>C2</td>
+            <td class="numero">C2</td>
         </tr>
         <tr> <!--TERCEIRA LINHA-->
-            <td class="esse">A3</td>
+            <td class="numero">A3</td>
             <td>B3</td>
             <td>C3</td>
         </tr>
