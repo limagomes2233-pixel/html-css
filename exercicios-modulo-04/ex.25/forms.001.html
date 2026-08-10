@@ -4,9 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <style>
+        body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        }
+        form input:hover{
+            background-color: blueviolet;
+        }
+    </style>
 </head>
 <body>
     <h1>Meu primeiro Formulário</h1>
-    
+    <form autocomplete="off" action="cadastro.php">
+        <p><label for="inome">nome</label> <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">sobrenome</label> <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="enviar"></p>
+    </form>
 </body>
 </html>
