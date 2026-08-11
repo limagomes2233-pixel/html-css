@@ -7,6 +7,40 @@
 </head>
 <body>
     <h1>Teste de Formulários</h1>
-    
+    <form action="cadastro.php" method="post">
+        <label for="iest">Estado</label>
+        <select name="estado" id="iest">
+            <optgroup label="Região Sudeste">
+                <option value="--selected--">--Escolha--</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="TO">Tocatins</option>
+            </optgroup>
+            <optgroup label="Região Nordeste">
+                <option value="RM">Rio Grande do Norte</option>
+                <option value="PE">Pernambuco</option>
+                <option value="MA">Maranhão</option>
+            </optgroup>
+        </select>
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="profissão" id="iprof" list="listprof">
+            <datalist id="listprof">
+                <option value="ADM">Administrador</option>
+                <option>Professor</option>
+                <option >Desenvolvedor</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagem:</label> <br>
+            <textarea name="msg" id="imsg"
+            rows="10" cols="30" placeholder="sua mensagem"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Apagar">
+        </p>
+    </form>
 </body>
 </html>
