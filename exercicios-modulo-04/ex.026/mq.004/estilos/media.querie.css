@@ -2,6 +2,73 @@
 
 /* Todos os restos de midias*/
 
+/* Typical Device Breakpoint
+
+
+Extra Small/ Mobile=576px (Smartphones no modo portrait (PAISAGEM)).
+
+Small/Large Mobile ou Tablet= 576 a 768px (large phones, portrait tablets)
+
+Medium/Tablet & Small Laptop=768px ate 992px (landscape Tablets("modo RETRATO) Smaller laptops) 
+
+Large/Desktop=992px ate 1200px(standard laptops and desktop screens)
+
+Extra Large/Large Desktop=1200px and up(large desktop monitors and tvs)
+*/
 @media print {
-    
+
+    body{
+       /*DESNECESSARIO*/
+
+        font-family: 'Courier New', Courier, monospace;
+     
+    }
+
+    main > h1{
+        
+        text-shadow: none;
+        color: black;
+        border: 4px solid black;
+    }
+    img#fone{display: none;}
+    #tablet{display: none;}
+    #impre{display: block;}
+    #pc{display: none;}
+    #tv{display: none;}
+       
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px)/* TABLETS*/ {
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    img#fone{display: none;}
+    #tablet{display: block;}
+    #impre{display: none;}
+    #pc{display: none;}
+    #tv{display: none;}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) /* DESKTOPS*/ {
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    #fone{display: none;}
+    #tablet{display: none;}
+    #impre{display: none;}
+    #pc{display: block;}
+    #tv{display: none;}
+}
+
+@media screen and (min-width: 1200px) /* GRANDES TELAS*/ {
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    img#fone{display: none;}
+    #tablet{display: none;}
+    #impre{display: none;}
+    #pc{display: none;}
+    #tv{display: block;}
 }

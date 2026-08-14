@@ -38,7 +38,7 @@ img{
     display: block;
     margin: auto;
 }
-img#fone{display: block;}
+#fone{display: block;}
 #tablet{display: none;}
 #impre{display: none;}
 #pc{display: none;}
