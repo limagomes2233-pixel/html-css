@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;     
+    background-color: rgba(100, 96, 96, 0.562); 
+    padding: 10px;
+    margin: 10px;
+}
+
+.caixa{
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
+    
+
+}
+
+header{
+   background-color: thistle; 
+   padding: 20px;
+   margin: 10px;
+   border-radius: 10px;
+   
+   grid-column: span 3;
+
+
+}
+
+header > h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    font-size: 3rem;
+   
+}
+
+header > nav{
+   
+    
+    padding: 10px;
+    margin: 10px;
+
+    
+}
+header > nav > a{
+    color: black;
+    background-color: silver;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    transition: 0,5s ease;
+    cursor: pointer;
+}
+header > nav > a:hover{
+    background-color: whitesmoke;
+    
+}
+main{
+    background-color: gray;
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 20px;
+    grid-column: span 3;
+    grid-row: span 4;
+}
+
+main > h2{
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.5rem;
+    background-color: blanchedalmond;
+    border-radius: 8px;
+
+}
+
+footer{
+    background-color: gainsboro;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    border-radius: 6px;
+    grid-column: span 3;
+    
+}
